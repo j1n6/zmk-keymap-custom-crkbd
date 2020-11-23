@@ -44,7 +44,7 @@
                 lower_layer {
 // LOWER Layer: Media and Number Pad
 // .--------------------------------------------------------------.    .-----------------------------------------------------------.
-// |              |    F5   |   F8   |   F9   |   F10   |         |    |  / ?  |   7 &   |   8 *   |   9 (   |   - _    |          |
+// |              |    F5   |   F8   |   F9   |   F10   |         |    |  / ?  |   7 &   |   8 *   |   9 (   |   - _    |   BKSP   |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |              |    F4   |   F5   |   F6   |   F11   |         |    |   *   |   4 $   |   5 %   |   6 ^   |   , <    |          |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
@@ -54,7 +54,7 @@
 //                                   '--------+---------+---------'    '-------+---------+---------'
 
                   bindings = <
-          &none      &kp F5   &kp F8   &kp F9   &kp F10   &none       &kp FSLH   &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp MINUS  &none
+          &none      &kp F5   &kp F8   &kp F9   &kp F10   &none       &kp FSLH   &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp MINUS  &kp BKSP
           &none      &kp F4   &kp F5   &kp F6   &kp F11   &none       &kp STAR   &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp COMMA  &none
           &none      &kp F1   &kp F2   &kp F3   &kp F12   &none       &kp NUM_0  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp EQUAL  &none
                                        &trans   &trans    &trans      &trans     &mo ADJS     &trans
@@ -66,7 +66,7 @@
                 raise_layer {
 // RAISE Layer: Special Chars
 // .--------------------------------------------------------------.    .-----------------------------------------------------------.
-// |              |    !    |    @   |   {    |    }    |    |    |    |   £   |    _    |    €    |         |          |          |
+// |              |    !    |    @   |   {    |    }    |    |    |    |   *   |    _    |    €    |         |          |          |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |              |    #    |    $   |   (    |    )    |    `    |    |   +   |    -    |    /    |         |          |          |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
@@ -75,9 +75,9 @@
 //                                   |        |         |         |    |       |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
                         bindings = <
-        &none    &kp EXCL   &kp AT    &kp LBRC  &kp RBRC  &kp PIPE     &kp FSLH   &kp NUM_7  &kp NUM_8  &none  &none  &none
-        &none    &kp HASH   &kp DLLR  &kp LPAR  &kp RPAR  &kp GRAVE    &kp STAR   &kp NUM_4  &kp NUM_5  &none  &none  &none
-        &none    &kp PRCNT  &kp CARET &kp LBKT  &kp RBKT  &kp TILDE    &kp NUM_0  &kp NUM_1  &kp NUM_2  &none  &none  &none
+        &none    &kp EXCL   &kp AT    &kp LBRC  &kp RBRC  &kp PIPE     &kp ASTRK  &kp UNDER  &kp NUM_8  &none  &none  &none
+        &none    &kp HASH   &kp DLLR  &kp LPAR  &kp RPAR  &kp GRAVE    &kp PLUS   &kp MINUS  &kp FSLH   &none  &none  &none
+        &none    &kp PRCNT  &kp CARET &kp LBKT  &kp RBKT  &kp TILDE    &kp AMPS   &kp EQUAL  &kp COMMA  &none  &none  &none
                                       &trans    &mo ADJS    &trans       &trans     &trans     &trans
                         >;
                 };
